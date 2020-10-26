@@ -1,0 +1,11 @@
+C:\Users\Admins\source\repos\CinesGarayConsultas\bin\Debug\CinesGarayConsultas.exe.config
+C:\Users\Admins\source\repos\CinesGarayConsultas\bin\Debug\CinesGarayConsultas.exe
+C:\Users\Admins\source\repos\CinesGarayConsultas\bin\Debug\CinesGarayConsultas.pdb
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.csprojAssemblyReference.cache
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.frmConsultaClientes.resources
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.frmPrincipal.resources
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.Properties.Resources.resources
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.csproj.GenerateResource.cache
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.csproj.CoreCompileInputs.cache
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.exe
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.pdb
