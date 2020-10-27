@@ -56,5 +56,10 @@ namespace CinesGarayConsultas
         {
 
         }
+
+        private void btnFunciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmConsultaReservasClientes());
+        }
     }
 }

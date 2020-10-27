@@ -30,30 +30,30 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelGeneral = new System.Windows.Forms.Panel();
-            this.panelIzq = new System.Windows.Forms.FlowLayoutPanel();
-            this.panelTop = new System.Windows.Forms.Panel();
-            this.panelDown = new System.Windows.Forms.Panel();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.panelContenedor = new System.Windows.Forms.Panel();
-            this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
             this.picLogoFondo = new System.Windows.Forms.PictureBox();
+            this.panelIzq = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnFunciones = new System.Windows.Forms.Button();
             this.btnConsumibles = new System.Windows.Forms.Button();
             this.btnPeliculas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.panelTop = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
+            this.panelDown = new System.Windows.Forms.Panel();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.panelContenedor = new System.Windows.Forms.Panel();
+            this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
             this.panelGeneral.SuspendLayout();
-            this.panelIzq.SuspendLayout();
-            this.panelTop.SuspendLayout();
-            this.panelDown.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).BeginInit();
+            this.panelIzq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
+            this.panelDown.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelGeneral
@@ -70,6 +70,16 @@
             this.panelGeneral.Size = new System.Drawing.Size(804, 450);
             this.panelGeneral.TabIndex = 2;
             // 
+            // picLogoFondo
+            // 
+            this.picLogoFondo.Image = global::CinesGarayConsultas.Properties.Resources.LogoCinesReportes;
+            this.picLogoFondo.Location = new System.Drawing.Point(306, 58);
+            this.picLogoFondo.Name = "picLogoFondo";
+            this.picLogoFondo.Size = new System.Drawing.Size(396, 342);
+            this.picLogoFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoFondo.TabIndex = 2;
+            this.picLogoFondo.TabStop = false;
+            // 
             // panelIzq
             // 
             this.panelIzq.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(6)))), ((int)(((byte)(27)))));
@@ -85,73 +95,6 @@
             this.panelIzq.Name = "panelIzq";
             this.panelIzq.Size = new System.Drawing.Size(195, 414);
             this.panelIzq.TabIndex = 0;
-            // 
-            // panelTop
-            // 
-            this.panelTop.BackColor = System.Drawing.Color.Black;
-            this.panelTop.Controls.Add(this.btnMinimizar);
-            this.panelTop.Controls.Add(this.btnSalir);
-            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTop.Location = new System.Drawing.Point(0, 0);
-            this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(804, 36);
-            this.panelTop.TabIndex = 1;
-            // 
-            // panelDown
-            // 
-            this.panelDown.BackColor = System.Drawing.Color.Black;
-            this.panelDown.Controls.Add(this.lblHora);
-            this.panelDown.Controls.Add(this.lblFecha);
-            this.panelDown.Location = new System.Drawing.Point(192, 419);
-            this.panelDown.Name = "panelDown";
-            this.panelDown.Size = new System.Drawing.Size(631, 31);
-            this.panelDown.TabIndex = 3;
-            // 
-            // lblHora
-            // 
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
-            this.lblHora.Location = new System.Drawing.Point(542, 4);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(45, 18);
-            this.lblHora.TabIndex = 2;
-            this.lblHora.Text = "hora";
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
-            this.lblFecha.Location = new System.Drawing.Point(413, 4);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(53, 18);
-            this.lblFecha.TabIndex = 2;
-            this.lblFecha.Text = "fecha";
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.panelContenedor.Location = new System.Drawing.Point(192, 34);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(612, 386);
-            this.panelContenedor.TabIndex = 4;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
-            // 
-            // timerFechaHora
-            // 
-            this.timerFechaHora.Enabled = true;
-            this.timerFechaHora.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // picLogoFondo
-            // 
-            this.picLogoFondo.Image = global::CinesGarayConsultas.Properties.Resources.LogoCinesReportes;
-            this.picLogoFondo.Location = new System.Drawing.Point(306, 58);
-            this.picLogoFondo.Name = "picLogoFondo";
-            this.picLogoFondo.Size = new System.Drawing.Size(396, 342);
-            this.picLogoFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogoFondo.TabIndex = 2;
-            this.picLogoFondo.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -197,6 +140,7 @@
             this.btnFunciones.Text = "Funciones";
             this.btnFunciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFunciones.UseVisualStyleBackColor = true;
+            this.btnFunciones.Click += new System.EventHandler(this.btnFunciones_Click);
             // 
             // btnConsumibles
             // 
@@ -249,6 +193,17 @@
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.UseVisualStyleBackColor = true;
             // 
+            // panelTop
+            // 
+            this.panelTop.BackColor = System.Drawing.Color.Black;
+            this.panelTop.Controls.Add(this.btnMinimizar);
+            this.panelTop.Controls.Add(this.btnSalir);
+            this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTop.Location = new System.Drawing.Point(0, 0);
+            this.panelTop.Name = "panelTop";
+            this.panelTop.Size = new System.Drawing.Size(804, 36);
+            this.panelTop.TabIndex = 1;
+            // 
             // btnMinimizar
             // 
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -273,6 +228,52 @@
             this.btnSalir.TabStop = false;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // panelDown
+            // 
+            this.panelDown.BackColor = System.Drawing.Color.Black;
+            this.panelDown.Controls.Add(this.lblHora);
+            this.panelDown.Controls.Add(this.lblFecha);
+            this.panelDown.Location = new System.Drawing.Point(192, 419);
+            this.panelDown.Name = "panelDown";
+            this.panelDown.Size = new System.Drawing.Size(631, 31);
+            this.panelDown.TabIndex = 3;
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
+            this.lblHora.Location = new System.Drawing.Point(542, 4);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(45, 18);
+            this.lblHora.TabIndex = 2;
+            this.lblHora.Text = "hora";
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
+            this.lblFecha.Location = new System.Drawing.Point(413, 4);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(53, 18);
+            this.lblFecha.TabIndex = 2;
+            this.lblFecha.Text = "fecha";
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.panelContenedor.Location = new System.Drawing.Point(192, 34);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(612, 386);
+            this.panelContenedor.TabIndex = 4;
+            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // timerFechaHora
+            // 
+            this.timerFechaHora.Enabled = true;
+            this.timerFechaHora.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,14 +285,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelGeneral.ResumeLayout(false);
-            this.panelIzq.ResumeLayout(false);
-            this.panelTop.ResumeLayout(false);
-            this.panelDown.ResumeLayout(false);
-            this.panelDown.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).EndInit();
+            this.panelIzq.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelTop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
+            this.panelDown.ResumeLayout(false);
+            this.panelDown.PerformLayout();
             this.ResumeLayout(false);
 
         }

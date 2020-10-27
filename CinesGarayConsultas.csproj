@@ -53,6 +53,12 @@
     <Compile Include="frmConsultaClientes.Designer.cs">
       <DependentUpon>frmConsultaClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsultaReservasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaReservasClientes.Designer.cs">
+      <DependentUpon>frmConsultaReservasClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmConsultaClientes.resx">
       <DependentUpon>frmConsultaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaReservasClientes.resx">
+      <DependentUpon>frmConsultaReservasClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
@@ -116,6 +125,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\imagenes\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\butaca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\imagenes\butaca16x16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

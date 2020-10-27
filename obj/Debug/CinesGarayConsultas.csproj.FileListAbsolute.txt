@@ -9,3 +9,4 @@ C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.c
 C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.csproj.CoreCompileInputs.cache
 C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.exe
 C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.pdb
+C:\Users\Admins\source\repos\CinesGarayConsultas\obj\Debug\CinesGarayConsultas.frmConsultaReservasClientes.resources
