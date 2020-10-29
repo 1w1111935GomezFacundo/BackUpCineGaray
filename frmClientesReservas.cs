@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CinesGarayConsultas
 {
-    public partial class frmConsultaReservasClientes : Form
+    public partial class frmClientesReservas : Form
     {
         Datos d = new Datos();
         int cc;
@@ -19,7 +19,7 @@ namespace CinesGarayConsultas
         String[] aFilas = new string[8];
         int[] aNroButacas = new int[8];
         string procSQL;
-        public frmConsultaReservasClientes()
+        public frmClientesReservas()
         {
             InitializeComponent();
             cc = ff = 0;
@@ -39,16 +39,16 @@ namespace CinesGarayConsultas
             aButacas[0, 3] = butaca4;
             aButacas[0, 4] = butaca5;
             aButacas[0, 5] = butaca6;
-            aButacas[0, 6] = butaca7;
-            aButacas[0, 7] = butaca8;
+            aButacas[0, 6] = butaca5;
+            aButacas[0, 7] = butaca6;
 
             //FILA B
             aButacas[1, 0] = butaca9;
             aButacas[1, 1] = butaca10;
             aButacas[1, 2] = butaca11;
             aButacas[1, 3] = butaca12;
-            aButacas[1, 4] = butaca13;
-            aButacas[1, 5] = butaca14;
+            aButacas[1, 4] = butaca7;
+            aButacas[1, 5] = butaca8;
             aButacas[1, 6] = butaca15;
             aButacas[1, 7] = butaca16;
         }
@@ -73,7 +73,7 @@ namespace CinesGarayConsultas
         }
         private void ButacaSeleccionada(int fila, int columna)
         {
-            aButacas[fila,columna].Image = Image.FromFile(@"imagenes/seleccionado.png");
+            aButacas[fila,columna].Image = Image.FromFile(@"imagenes/seleccionado16x16.png");
         }
 
         private void butaca1_Click(object sender, EventArgs e)

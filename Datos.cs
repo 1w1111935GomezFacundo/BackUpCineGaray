@@ -39,7 +39,7 @@ namespace CinesGarayConsultas
 
         public void conectar()
         {
-            miConexion.ConnectionString = @"Provider=SQLNCLI11;Data Source=DESKTOP-9DRKLNF;Integrated Security=SSPI;Initial Catalog=BorradorCineGARAY";
+            miConexion.ConnectionString = @"Provider=SQLNCLI11;Data Source=FACU-PC\SQLEXPRESS;Integrated Security=SSPI;Initial Catalog=BorradorCineGARAY";
             miConexion.Open();
             miComando.Connection = miConexion;
             miProc.Connection = miConexion;

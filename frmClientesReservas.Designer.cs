@@ -1,6 +1,6 @@
 ﻿namespace CinesGarayConsultas
 {
-    partial class frmConsultaReservasClientes
+    partial class frmClientesReservas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,27 +29,44 @@
         private void InitializeComponent()
         {
             this.panelTopClientes = new System.Windows.Forms.Panel();
-            this.btnConsultarReservas = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpAño = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnConsultarReservas = new System.Windows.Forms.Button();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dgvReservasClientes = new System.Windows.Forms.DataGridView();
+            this.butaca5 = new System.Windows.Forms.Button();
+            this.butaca6 = new System.Windows.Forms.Button();
             this.butaca7 = new System.Windows.Forms.Button();
             this.butaca8 = new System.Windows.Forms.Button();
-            this.butaca13 = new System.Windows.Forms.Button();
-            this.butaca14 = new System.Windows.Forms.Button();
             this.butaca15 = new System.Windows.Forms.Button();
             this.butaca16 = new System.Windows.Forms.Button();
+            this.butaca17 = new System.Windows.Forms.Button();
+            this.butaca18 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button40 = new System.Windows.Forms.Button();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
+            this.button45 = new System.Windows.Forms.Button();
+            this.button46 = new System.Windows.Forms.Button();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.butaca1 = new System.Windows.Forms.Button();
             this.butaca2 = new System.Windows.Forms.Button();
             this.butaca3 = new System.Windows.Forms.Button();
@@ -82,6 +99,15 @@
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dgvReservasClientes = new System.Windows.Forms.DataGridView();
             this.panelTopClientes.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -91,7 +117,6 @@
             // panelTopClientes
             // 
             this.panelTopClientes.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelTopClientes.Controls.Add(this.btnConsultarReservas);
             this.panelTopClientes.Controls.Add(this.label2);
             this.panelTopClientes.Controls.Add(this.dtpAño);
             this.panelTopClientes.Controls.Add(this.label1);
@@ -99,16 +124,6 @@
             this.panelTopClientes.Name = "panelTopClientes";
             this.panelTopClientes.Size = new System.Drawing.Size(655, 79);
             this.panelTopClientes.TabIndex = 20;
-            // 
-            // btnConsultarReservas
-            // 
-            this.btnConsultarReservas.Location = new System.Drawing.Point(392, 47);
-            this.btnConsultarReservas.Name = "btnConsultarReservas";
-            this.btnConsultarReservas.Size = new System.Drawing.Size(75, 23);
-            this.btnConsultarReservas.TabIndex = 3;
-            this.btnConsultarReservas.Text = "Consultar";
-            this.btnConsultarReservas.UseVisualStyleBackColor = true;
-            this.btnConsultarReservas.Click += new System.EventHandler(this.btnConsultarReservas_Click);
             // 
             // label2
             // 
@@ -140,18 +155,348 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Listar los clientes que hicieron una reserva el año";
             // 
+            // btnConsultarReservas
+            // 
+            this.btnConsultarReservas.Location = new System.Drawing.Point(142, 352);
+            this.btnConsultarReservas.Name = "btnConsultarReservas";
+            this.btnConsultarReservas.Size = new System.Drawing.Size(75, 23);
+            this.btnConsultarReservas.TabIndex = 3;
+            this.btnConsultarReservas.Text = "Consultar";
+            this.btnConsultarReservas.UseVisualStyleBackColor = true;
+            this.btnConsultarReservas.Click += new System.EventHandler(this.btnConsultarReservas_Click);
+            // 
             // flowLayoutPanel2
             // 
+            this.flowLayoutPanel2.Controls.Add(this.butaca5);
+            this.flowLayoutPanel2.Controls.Add(this.butaca6);
             this.flowLayoutPanel2.Controls.Add(this.butaca7);
             this.flowLayoutPanel2.Controls.Add(this.butaca8);
-            this.flowLayoutPanel2.Controls.Add(this.butaca13);
-            this.flowLayoutPanel2.Controls.Add(this.butaca14);
             this.flowLayoutPanel2.Controls.Add(this.butaca15);
             this.flowLayoutPanel2.Controls.Add(this.butaca16);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(178, 101);
+            this.flowLayoutPanel2.Controls.Add(this.butaca17);
+            this.flowLayoutPanel2.Controls.Add(this.butaca18);
+            this.flowLayoutPanel2.Controls.Add(this.button5);
+            this.flowLayoutPanel2.Controls.Add(this.button6);
+            this.flowLayoutPanel2.Controls.Add(this.button7);
+            this.flowLayoutPanel2.Controls.Add(this.button8);
+            this.flowLayoutPanel2.Controls.Add(this.button29);
+            this.flowLayoutPanel2.Controls.Add(this.button30);
+            this.flowLayoutPanel2.Controls.Add(this.button31);
+            this.flowLayoutPanel2.Controls.Add(this.button32);
+            this.flowLayoutPanel2.Controls.Add(this.button33);
+            this.flowLayoutPanel2.Controls.Add(this.button34);
+            this.flowLayoutPanel2.Controls.Add(this.button35);
+            this.flowLayoutPanel2.Controls.Add(this.button36);
+            this.flowLayoutPanel2.Controls.Add(this.button37);
+            this.flowLayoutPanel2.Controls.Add(this.button38);
+            this.flowLayoutPanel2.Controls.Add(this.button39);
+            this.flowLayoutPanel2.Controls.Add(this.button40);
+            this.flowLayoutPanel2.Controls.Add(this.button41);
+            this.flowLayoutPanel2.Controls.Add(this.button42);
+            this.flowLayoutPanel2.Controls.Add(this.button43);
+            this.flowLayoutPanel2.Controls.Add(this.button44);
+            this.flowLayoutPanel2.Controls.Add(this.button45);
+            this.flowLayoutPanel2.Controls.Add(this.button46);
+            this.flowLayoutPanel2.Controls.Add(this.button47);
+            this.flowLayoutPanel2.Controls.Add(this.button48);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(188, 101);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(126, 228);
             this.flowLayoutPanel2.TabIndex = 22;
+            // 
+            // butaca5
+            // 
+            this.butaca5.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca5.Location = new System.Drawing.Point(3, 3);
+            this.butaca5.Name = "butaca5";
+            this.butaca5.Size = new System.Drawing.Size(26, 22);
+            this.butaca5.TabIndex = 3;
+            this.butaca5.UseVisualStyleBackColor = true;
+            this.butaca5.Click += new System.EventHandler(this.butaca7_Click);
+            // 
+            // butaca6
+            // 
+            this.butaca6.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca6.Location = new System.Drawing.Point(35, 3);
+            this.butaca6.Name = "butaca6";
+            this.butaca6.Size = new System.Drawing.Size(23, 22);
+            this.butaca6.TabIndex = 4;
+            this.butaca6.UseVisualStyleBackColor = true;
+            this.butaca6.Click += new System.EventHandler(this.butaca8_Click);
+            // 
+            // butaca7
+            // 
+            this.butaca7.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca7.Location = new System.Drawing.Point(64, 3);
+            this.butaca7.Name = "butaca7";
+            this.butaca7.Size = new System.Drawing.Size(25, 22);
+            this.butaca7.TabIndex = 5;
+            this.butaca7.UseVisualStyleBackColor = true;
+            this.butaca7.Click += new System.EventHandler(this.butaca13_Click);
+            // 
+            // butaca8
+            // 
+            this.butaca8.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca8.Location = new System.Drawing.Point(95, 3);
+            this.butaca8.Name = "butaca8";
+            this.butaca8.Size = new System.Drawing.Size(25, 22);
+            this.butaca8.TabIndex = 6;
+            this.butaca8.UseVisualStyleBackColor = true;
+            this.butaca8.Click += new System.EventHandler(this.butaca14_Click);
+            // 
+            // butaca15
+            // 
+            this.butaca15.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca15.Location = new System.Drawing.Point(3, 31);
+            this.butaca15.Name = "butaca15";
+            this.butaca15.Size = new System.Drawing.Size(26, 22);
+            this.butaca15.TabIndex = 7;
+            this.butaca15.UseVisualStyleBackColor = true;
+            this.butaca15.Click += new System.EventHandler(this.butaca15_Click);
+            // 
+            // butaca16
+            // 
+            this.butaca16.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca16.Location = new System.Drawing.Point(35, 31);
+            this.butaca16.Name = "butaca16";
+            this.butaca16.Size = new System.Drawing.Size(23, 22);
+            this.butaca16.TabIndex = 8;
+            this.butaca16.UseVisualStyleBackColor = true;
+            this.butaca16.Click += new System.EventHandler(this.butaca16_Click);
+            // 
+            // butaca17
+            // 
+            this.butaca17.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca17.Location = new System.Drawing.Point(64, 31);
+            this.butaca17.Name = "butaca17";
+            this.butaca17.Size = new System.Drawing.Size(23, 22);
+            this.butaca17.TabIndex = 9;
+            this.butaca17.UseVisualStyleBackColor = true;
+            // 
+            // butaca18
+            // 
+            this.butaca18.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.butaca18.Location = new System.Drawing.Point(93, 31);
+            this.butaca18.Name = "butaca18";
+            this.butaca18.Size = new System.Drawing.Size(23, 22);
+            this.butaca18.TabIndex = 10;
+            this.butaca18.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button5.Location = new System.Drawing.Point(3, 59);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(23, 22);
+            this.button5.TabIndex = 11;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button6.Location = new System.Drawing.Point(32, 59);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(23, 22);
+            this.button6.TabIndex = 12;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button7.Location = new System.Drawing.Point(61, 59);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(23, 22);
+            this.button7.TabIndex = 13;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button8.Location = new System.Drawing.Point(90, 59);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(23, 22);
+            this.button8.TabIndex = 14;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button29
+            // 
+            this.button29.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button29.Location = new System.Drawing.Point(3, 87);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(23, 22);
+            this.button29.TabIndex = 15;
+            this.button29.UseVisualStyleBackColor = true;
+            // 
+            // button30
+            // 
+            this.button30.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button30.Location = new System.Drawing.Point(32, 87);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(23, 22);
+            this.button30.TabIndex = 16;
+            this.button30.UseVisualStyleBackColor = true;
+            // 
+            // button31
+            // 
+            this.button31.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button31.Location = new System.Drawing.Point(61, 87);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(23, 22);
+            this.button31.TabIndex = 17;
+            this.button31.UseVisualStyleBackColor = true;
+            // 
+            // button32
+            // 
+            this.button32.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button32.Location = new System.Drawing.Point(90, 87);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(23, 22);
+            this.button32.TabIndex = 18;
+            this.button32.UseVisualStyleBackColor = true;
+            // 
+            // button33
+            // 
+            this.button33.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button33.Location = new System.Drawing.Point(3, 115);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(23, 22);
+            this.button33.TabIndex = 19;
+            this.button33.UseVisualStyleBackColor = true;
+            // 
+            // button34
+            // 
+            this.button34.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button34.Location = new System.Drawing.Point(32, 115);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(23, 22);
+            this.button34.TabIndex = 20;
+            this.button34.UseVisualStyleBackColor = true;
+            // 
+            // button35
+            // 
+            this.button35.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button35.Location = new System.Drawing.Point(61, 115);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(23, 22);
+            this.button35.TabIndex = 21;
+            this.button35.UseVisualStyleBackColor = true;
+            // 
+            // button36
+            // 
+            this.button36.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button36.Location = new System.Drawing.Point(90, 115);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(23, 22);
+            this.button36.TabIndex = 22;
+            this.button36.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button37.Location = new System.Drawing.Point(3, 143);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(23, 22);
+            this.button37.TabIndex = 23;
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button38
+            // 
+            this.button38.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button38.Location = new System.Drawing.Point(32, 143);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(23, 22);
+            this.button38.TabIndex = 24;
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button39.Location = new System.Drawing.Point(61, 143);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(23, 22);
+            this.button39.TabIndex = 25;
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // button40
+            // 
+            this.button40.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button40.Location = new System.Drawing.Point(90, 143);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(23, 22);
+            this.button40.TabIndex = 26;
+            this.button40.UseVisualStyleBackColor = true;
+            // 
+            // button41
+            // 
+            this.button41.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button41.Location = new System.Drawing.Point(3, 171);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(23, 22);
+            this.button41.TabIndex = 27;
+            this.button41.UseVisualStyleBackColor = true;
+            // 
+            // button42
+            // 
+            this.button42.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button42.Location = new System.Drawing.Point(32, 171);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(23, 22);
+            this.button42.TabIndex = 28;
+            this.button42.UseVisualStyleBackColor = true;
+            // 
+            // button43
+            // 
+            this.button43.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button43.Location = new System.Drawing.Point(61, 171);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(23, 22);
+            this.button43.TabIndex = 29;
+            this.button43.UseVisualStyleBackColor = true;
+            // 
+            // button44
+            // 
+            this.button44.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button44.Location = new System.Drawing.Point(90, 171);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(23, 22);
+            this.button44.TabIndex = 30;
+            this.button44.UseVisualStyleBackColor = true;
+            // 
+            // button45
+            // 
+            this.button45.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button45.Location = new System.Drawing.Point(3, 199);
+            this.button45.Name = "button45";
+            this.button45.Size = new System.Drawing.Size(23, 22);
+            this.button45.TabIndex = 31;
+            this.button45.UseVisualStyleBackColor = true;
+            // 
+            // button46
+            // 
+            this.button46.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button46.Location = new System.Drawing.Point(32, 199);
+            this.button46.Name = "button46";
+            this.button46.Size = new System.Drawing.Size(23, 22);
+            this.button46.TabIndex = 32;
+            this.button46.UseVisualStyleBackColor = true;
+            // 
+            // button47
+            // 
+            this.button47.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button47.Location = new System.Drawing.Point(61, 199);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(23, 22);
+            this.button47.TabIndex = 33;
+            this.button47.UseVisualStyleBackColor = true;
+            // 
+            // button48
+            // 
+            this.button48.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
+            this.button48.Location = new System.Drawing.Point(90, 199);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(23, 22);
+            this.button48.TabIndex = 34;
+            this.button48.UseVisualStyleBackColor = true;
             // 
             // flowLayoutPanel1
             // 
@@ -187,152 +532,11 @@
             this.flowLayoutPanel1.Controls.Add(this.button26);
             this.flowLayoutPanel1.Controls.Add(this.button27);
             this.flowLayoutPanel1.Controls.Add(this.button28);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(37, 101);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(47, 101);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(135, 228);
             this.flowLayoutPanel1.TabIndex = 21;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 109);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 13);
-            this.label3.TabIndex = 23;
-            this.label3.Text = "A";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 137);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 13);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "B";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 165);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 13);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "C";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(15, 13);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "D";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 221);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(14, 13);
-            this.label7.TabIndex = 23;
-            this.label7.Text = "E";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 249);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(13, 13);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "F";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 277);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 13);
-            this.label9.TabIndex = 23;
-            this.label9.Text = "G";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 305);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(15, 13);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "H";
-            // 
-            // dgvReservasClientes
-            // 
-            this.dgvReservasClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvReservasClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReservasClientes.Location = new System.Drawing.Point(337, 101);
-            this.dgvReservasClientes.Name = "dgvReservasClientes";
-            this.dgvReservasClientes.Size = new System.Drawing.Size(195, 290);
-            this.dgvReservasClientes.TabIndex = 24;
-            // 
-            // butaca7
-            // 
-            this.butaca7.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca7.Location = new System.Drawing.Point(3, 3);
-            this.butaca7.Name = "butaca7";
-            this.butaca7.Size = new System.Drawing.Size(26, 22);
-            this.butaca7.TabIndex = 3;
-            this.butaca7.UseVisualStyleBackColor = true;
-            this.butaca7.Click += new System.EventHandler(this.butaca7_Click);
-            // 
-            // butaca8
-            // 
-            this.butaca8.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca8.Location = new System.Drawing.Point(35, 3);
-            this.butaca8.Name = "butaca8";
-            this.butaca8.Size = new System.Drawing.Size(23, 22);
-            this.butaca8.TabIndex = 4;
-            this.butaca8.UseVisualStyleBackColor = true;
-            this.butaca8.Click += new System.EventHandler(this.butaca8_Click);
-            // 
-            // butaca13
-            // 
-            this.butaca13.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca13.Location = new System.Drawing.Point(64, 3);
-            this.butaca13.Name = "butaca13";
-            this.butaca13.Size = new System.Drawing.Size(25, 22);
-            this.butaca13.TabIndex = 5;
-            this.butaca13.UseVisualStyleBackColor = true;
-            this.butaca13.Click += new System.EventHandler(this.butaca13_Click);
-            // 
-            // butaca14
-            // 
-            this.butaca14.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca14.Location = new System.Drawing.Point(95, 3);
-            this.butaca14.Name = "butaca14";
-            this.butaca14.Size = new System.Drawing.Size(25, 22);
-            this.butaca14.TabIndex = 6;
-            this.butaca14.UseVisualStyleBackColor = true;
-            this.butaca14.Click += new System.EventHandler(this.butaca14_Click);
-            // 
-            // butaca15
-            // 
-            this.butaca15.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca15.Location = new System.Drawing.Point(3, 31);
-            this.butaca15.Name = "butaca15";
-            this.butaca15.Size = new System.Drawing.Size(26, 22);
-            this.butaca15.TabIndex = 7;
-            this.butaca15.UseVisualStyleBackColor = true;
-            this.butaca15.Click += new System.EventHandler(this.butaca15_Click);
-            // 
-            // butaca16
-            // 
-            this.butaca16.Image = global::CinesGarayConsultas.Properties.Resources.butaca16x16;
-            this.butaca16.Location = new System.Drawing.Point(35, 31);
-            this.butaca16.Name = "butaca16";
-            this.butaca16.Size = new System.Drawing.Size(23, 22);
-            this.butaca16.TabIndex = 8;
-            this.butaca16.UseVisualStyleBackColor = true;
-            this.butaca16.Click += new System.EventHandler(this.butaca16_Click);
             // 
             // butaca1
             // 
@@ -631,11 +835,94 @@
             this.button28.TabIndex = 31;
             this.button28.UseVisualStyleBackColor = true;
             // 
-            // frmConsultaReservasClientes
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(22, 109);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 13);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "A";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(23, 137);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 13);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "B";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(23, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "C";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(22, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(15, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "D";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(23, 221);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(14, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "E";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(22, 249);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "F";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(22, 277);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 13);
+            this.label9.TabIndex = 23;
+            this.label9.Text = "G";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(21, 305);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(15, 13);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "H";
+            // 
+            // dgvReservasClientes
+            // 
+            this.dgvReservasClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.dgvReservasClientes.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvReservasClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReservasClientes.Location = new System.Drawing.Point(337, 101);
+            this.dgvReservasClientes.Name = "dgvReservasClientes";
+            this.dgvReservasClientes.Size = new System.Drawing.Size(250, 260);
+            this.dgvReservasClientes.TabIndex = 24;
+            // 
+            // frmClientesReservas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 450);
+            this.ClientSize = new System.Drawing.Size(612, 386);
+            this.Controls.Add(this.btnConsultarReservas);
             this.Controls.Add(this.dgvReservasClientes);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -649,7 +936,7 @@
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panelTopClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmConsultaReservasClientes";
+            this.Name = "frmClientesReservas";
             this.Text = "frmConsultaReservasClientes";
             this.Load += new System.EventHandler(this.frmConsultaReservasClientes_Load);
             this.panelTopClientes.ResumeLayout(false);
@@ -670,10 +957,10 @@
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button butaca1;
+        private System.Windows.Forms.Button butaca5;
+        private System.Windows.Forms.Button butaca6;
         private System.Windows.Forms.Button butaca7;
         private System.Windows.Forms.Button butaca8;
-        private System.Windows.Forms.Button butaca13;
-        private System.Windows.Forms.Button butaca14;
         private System.Windows.Forms.Button butaca15;
         private System.Windows.Forms.Button butaca16;
         private System.Windows.Forms.Button butaca2;
@@ -717,5 +1004,31 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button butaca17;
+        private System.Windows.Forms.Button butaca18;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button40;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button44;
+        private System.Windows.Forms.Button button45;
+        private System.Windows.Forms.Button button46;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button48;
     }
 }

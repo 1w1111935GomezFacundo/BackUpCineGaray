@@ -29,15 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPrincipal));
             this.panelGeneral = new System.Windows.Forms.Panel();
-            this.picLogoFondo = new System.Windows.Forms.PictureBox();
             this.panelIzq = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnClientes = new System.Windows.Forms.Button();
-            this.btnFunciones = new System.Windows.Forms.Button();
-            this.btnConsumibles = new System.Windows.Forms.Button();
             this.btnPeliculas = new System.Windows.Forms.Button();
             this.btnReportes = new System.Windows.Forms.Button();
+            this.btnOtros = new System.Windows.Forms.Button();
             this.panelTop = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnSalir = new System.Windows.Forms.PictureBox();
@@ -45,21 +44,22 @@
             this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
+            this.picLogoFondo = new System.Windows.Forms.PictureBox();
             this.timerFechaHora = new System.Windows.Forms.Timer(this.components);
             this.panelGeneral.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).BeginInit();
             this.panelIzq.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).BeginInit();
             this.panelDown.SuspendLayout();
+            this.panelContenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).BeginInit();
             this.SuspendLayout();
             // 
             // panelGeneral
             // 
             this.panelGeneral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
-            this.panelGeneral.Controls.Add(this.picLogoFondo);
             this.panelGeneral.Controls.Add(this.panelIzq);
             this.panelGeneral.Controls.Add(this.panelTop);
             this.panelGeneral.Controls.Add(this.panelDown);
@@ -70,25 +70,14 @@
             this.panelGeneral.Size = new System.Drawing.Size(804, 450);
             this.panelGeneral.TabIndex = 2;
             // 
-            // picLogoFondo
-            // 
-            this.picLogoFondo.Image = global::CinesGarayConsultas.Properties.Resources.LogoCinesReportes;
-            this.picLogoFondo.Location = new System.Drawing.Point(306, 58);
-            this.picLogoFondo.Name = "picLogoFondo";
-            this.picLogoFondo.Size = new System.Drawing.Size(396, 342);
-            this.picLogoFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogoFondo.TabIndex = 2;
-            this.picLogoFondo.TabStop = false;
-            // 
             // panelIzq
             // 
             this.panelIzq.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(6)))), ((int)(((byte)(27)))));
             this.panelIzq.Controls.Add(this.pictureBox1);
             this.panelIzq.Controls.Add(this.btnClientes);
-            this.panelIzq.Controls.Add(this.btnFunciones);
-            this.panelIzq.Controls.Add(this.btnConsumibles);
             this.panelIzq.Controls.Add(this.btnPeliculas);
             this.panelIzq.Controls.Add(this.btnReportes);
+            this.panelIzq.Controls.Add(this.btnOtros);
             this.panelIzq.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelIzq.ForeColor = System.Drawing.Color.Black;
             this.panelIzq.Location = new System.Drawing.Point(0, 36);
@@ -117,47 +106,12 @@
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.Location = new System.Drawing.Point(3, 127);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(192, 45);
+            this.btnClientes.Size = new System.Drawing.Size(192, 50);
             this.btnClientes.TabIndex = 6;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
-            // 
-            // btnFunciones
-            // 
-            this.btnFunciones.FlatAppearance.BorderSize = 0;
-            this.btnFunciones.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
-            this.btnFunciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFunciones.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFunciones.ForeColor = System.Drawing.Color.Black;
-            this.btnFunciones.Image = global::CinesGarayConsultas.Properties.Resources.funcion;
-            this.btnFunciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFunciones.Location = new System.Drawing.Point(3, 178);
-            this.btnFunciones.Name = "btnFunciones";
-            this.btnFunciones.Size = new System.Drawing.Size(192, 46);
-            this.btnFunciones.TabIndex = 1;
-            this.btnFunciones.Text = "Funciones";
-            this.btnFunciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFunciones.UseVisualStyleBackColor = true;
-            this.btnFunciones.Click += new System.EventHandler(this.btnFunciones_Click);
-            // 
-            // btnConsumibles
-            // 
-            this.btnConsumibles.FlatAppearance.BorderSize = 0;
-            this.btnConsumibles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
-            this.btnConsumibles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsumibles.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsumibles.ForeColor = System.Drawing.Color.Black;
-            this.btnConsumibles.Image = global::CinesGarayConsultas.Properties.Resources.pururu;
-            this.btnConsumibles.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsumibles.Location = new System.Drawing.Point(3, 230);
-            this.btnConsumibles.Name = "btnConsumibles";
-            this.btnConsumibles.Size = new System.Drawing.Size(192, 47);
-            this.btnConsumibles.TabIndex = 3;
-            this.btnConsumibles.Text = "Consumibles";
-            this.btnConsumibles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsumibles.UseVisualStyleBackColor = true;
             // 
             // btnPeliculas
             // 
@@ -168,13 +122,14 @@
             this.btnPeliculas.ForeColor = System.Drawing.Color.Black;
             this.btnPeliculas.Image = global::CinesGarayConsultas.Properties.Resources.pelicula;
             this.btnPeliculas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPeliculas.Location = new System.Drawing.Point(3, 283);
+            this.btnPeliculas.Location = new System.Drawing.Point(3, 183);
             this.btnPeliculas.Name = "btnPeliculas";
             this.btnPeliculas.Size = new System.Drawing.Size(192, 45);
             this.btnPeliculas.TabIndex = 5;
             this.btnPeliculas.Text = "Películas";
             this.btnPeliculas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPeliculas.UseVisualStyleBackColor = true;
+            this.btnPeliculas.Click += new System.EventHandler(this.btnPeliculas_Click);
             // 
             // btnReportes
             // 
@@ -185,13 +140,32 @@
             this.btnReportes.ForeColor = System.Drawing.Color.Black;
             this.btnReportes.Image = global::CinesGarayConsultas.Properties.Resources.reportes;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Location = new System.Drawing.Point(3, 334);
+            this.btnReportes.Location = new System.Drawing.Point(3, 234);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(192, 45);
             this.btnReportes.TabIndex = 7;
-            this.btnReportes.Text = "Reportes";
+            this.btnReportes.Text = "Ventas";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReportes.UseVisualStyleBackColor = true;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
+            // 
+            // btnOtros
+            // 
+            this.btnOtros.FlatAppearance.BorderSize = 0;
+            this.btnOtros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(76)))));
+            this.btnOtros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOtros.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOtros.ForeColor = System.Drawing.Color.Black;
+            this.btnOtros.Image = global::CinesGarayConsultas.Properties.Resources.funcion;
+            this.btnOtros.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOtros.Location = new System.Drawing.Point(3, 285);
+            this.btnOtros.Name = "btnOtros";
+            this.btnOtros.Size = new System.Drawing.Size(192, 45);
+            this.btnOtros.TabIndex = 8;
+            this.btnOtros.Text = "Otros";
+            this.btnOtros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnOtros.UseVisualStyleBackColor = true;
+            this.btnOtros.Click += new System.EventHandler(this.button1_Click);
             // 
             // panelTop
             // 
@@ -203,6 +177,9 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(804, 36);
             this.panelTop.TabIndex = 1;
+            this.panelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseDown);
+            this.panelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseMove);
+            this.panelTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panelTop_MouseUp);
             // 
             // btnMinimizar
             // 
@@ -262,12 +239,22 @@
             // 
             // panelContenedor
             // 
+            this.panelContenedor.Controls.Add(this.picLogoFondo);
             this.panelContenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.panelContenedor.Location = new System.Drawing.Point(192, 34);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(612, 386);
             this.panelContenedor.TabIndex = 4;
-            this.panelContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.panelContenedor_Paint);
+            // 
+            // picLogoFondo
+            // 
+            this.picLogoFondo.Image = global::CinesGarayConsultas.Properties.Resources.LogoCinesReportes;
+            this.picLogoFondo.Location = new System.Drawing.Point(102, 21);
+            this.picLogoFondo.Name = "picLogoFondo";
+            this.picLogoFondo.Size = new System.Drawing.Size(396, 342);
+            this.picLogoFondo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoFondo.TabIndex = 2;
+            this.picLogoFondo.TabStop = false;
             // 
             // timerFechaHora
             // 
@@ -281,11 +268,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelGeneral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panelGeneral.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).EndInit();
             this.panelIzq.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTop.ResumeLayout(false);
@@ -293,6 +280,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnSalir)).EndInit();
             this.panelDown.ResumeLayout(false);
             this.panelDown.PerformLayout();
+            this.panelContenedor.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoFondo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -300,11 +289,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panelGeneral;
-        private System.Windows.Forms.PictureBox picLogoFondo;
         private System.Windows.Forms.FlowLayoutPanel panelIzq;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnFunciones;
-        private System.Windows.Forms.Button btnConsumibles;
         private System.Windows.Forms.Button btnPeliculas;
         private System.Windows.Forms.Button btnClientes;
         private System.Windows.Forms.Button btnReportes;
@@ -316,6 +302,8 @@
         private System.Windows.Forms.Label lblFecha;
         private System.Windows.Forms.Timer timerFechaHora;
         private System.Windows.Forms.Panel panelContenedor;
+        private System.Windows.Forms.PictureBox picLogoFondo;
+        private System.Windows.Forms.Button btnOtros;
     }
 }
 

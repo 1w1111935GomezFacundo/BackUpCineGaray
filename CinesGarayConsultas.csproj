@@ -47,17 +47,83 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos.cs" />
-    <Compile Include="frmConsultaClientes.cs">
+    <Compile Include="frmActoresPelisATP.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultaClientes.Designer.cs">
-      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
+    <Compile Include="frmActoresPelisATP.Designer.cs">
+      <DependentUpon>frmActoresPelisATP.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsultaReservasClientes.cs">
+    <Compile Include="frmCantidadActuaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsultaReservasClientes.Designer.cs">
-      <DependentUpon>frmConsultaReservasClientes.cs</DependentUpon>
+    <Compile Include="frmCantidadActuaciones.Designer.cs">
+      <DependentUpon>frmCantidadActuaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCantidadVentasxAño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCantidadVentasxAño.Designer.cs">
+      <DependentUpon>frmCantidadVentasxAño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesVisitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesVisitas.Designer.cs">
+      <DependentUpon>frmClientesVisitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmClientesReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmClientesReservas.Designer.cs">
+      <DependentUpon>frmClientesReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDirectoresQueSonActores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDirectoresQueSonActores.Designer.cs">
+      <DependentUpon>frmDirectoresQueSonActores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDuracion.Designer.cs">
+      <DependentUpon>frmDuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneralClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneralClientes.Designer.cs">
+      <DependentUpon>frmGeneralClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneralOtros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneralOtros.Designer.cs">
+      <DependentUpon>frmGeneralOtros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneralPelis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneralPelis.Designer.cs">
+      <DependentUpon>frmGeneralPelis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGeneralVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGeneralVentas.Designer.cs">
+      <DependentUpon>frmGeneralVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListadoActoresYPelisxGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListadoActoresYPelisxGenero.Designer.cs">
+      <DependentUpon>frmListadoActoresYPelisxGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPelisxAñoxGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPelisxAñoxGenero.Designer.cs">
+      <DependentUpon>frmPelisxAñoxGenero.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
@@ -65,31 +131,73 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmVentasEntradasTipoEspectador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVentasEntradasTipoEspectador.Designer.cs">
+      <DependentUpon>frmVentasEntradasTipoEspectador.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmConsultaClientes.resx">
-      <DependentUpon>frmConsultaClientes.cs</DependentUpon>
+    <EmbeddedResource Include="frmActoresPelisATP.resx">
+      <DependentUpon>frmActoresPelisATP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsultaReservasClientes.resx">
-      <DependentUpon>frmConsultaReservasClientes.cs</DependentUpon>
+    <EmbeddedResource Include="frmCantidadActuaciones.resx">
+      <DependentUpon>frmCantidadActuaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCantidadVentasxAño.resx">
+      <DependentUpon>frmCantidadVentasxAño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesVisitas.resx">
+      <DependentUpon>frmClientesVisitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmClientesReservas.resx">
+      <DependentUpon>frmClientesReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDirectoresQueSonActores.resx">
+      <DependentUpon>frmDirectoresQueSonActores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDuracion.resx">
+      <DependentUpon>frmDuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneralClientes.resx">
+      <DependentUpon>frmGeneralClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneralOtros.resx">
+      <DependentUpon>frmGeneralOtros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneralPelis.resx">
+      <DependentUpon>frmGeneralPelis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGeneralVentas.resx">
+      <DependentUpon>frmGeneralVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListadoActoresYPelisxGenero.resx">
+      <DependentUpon>frmListadoActoresYPelisxGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPelisxAñoxGenero.resx">
+      <DependentUpon>frmPelisxAñoxGenero.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmVentasEntradasTipoEspectador.resx">
+      <DependentUpon>frmVentasEntradasTipoEspectador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -127,10 +235,10 @@
     <None Include="bin\Debug\imagenes\reportes.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\imagenes\butaca.png" />
+    <None Include="bin\Debug\imagenes\butaca16x16.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\imagenes\butaca16x16.png" />
+    <None Include="bin\Debug\imagenes\popcorn.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

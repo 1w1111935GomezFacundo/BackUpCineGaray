@@ -12,6 +12,7 @@ namespace CinesGarayConsultas
 {
     public partial class frmPrincipal : Form
     {
+        Button btnActuar;
 
         public frmPrincipal()
         {
@@ -49,17 +50,86 @@ namespace CinesGarayConsultas
         }
         private void btnClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmConsultaClientes());
+            AbrirFormHija(new frmGeneralClientes());
+            ActivarBoton(sender, RGBColors.Colorcito);
         }
 
-        private void panelContenedor_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void btnFunciones_Click(object sender, EventArgs e)
         {
-            AbrirFormHija(new frmConsultaReservasClientes());
+            ActivarBoton(sender, RGBColors.Colorcito);
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmGeneralVentas());
+            ActivarBoton(sender, RGBColors.Colorcito);
+        }
+
+        private void btnPeliculas_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmGeneralPelis());
+            ActivarBoton(sender, RGBColors.Colorcito);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AbrirFormHija(new frmGeneralOtros());
+            ActivarBoton(sender, RGBColors.Colorcito);
+        }
+
+        private Point Posicion = Point.Empty;
+        private bool move = false;
+        private void panelTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            Posicion = new Point(e.X, e.Y);
+            move = true;
+        }
+
+        private void panelTop_MouseUp(object sender, MouseEventArgs e)
+        {
+            move = false;
+        }
+
+        private void panelTop_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(move)
+                this.Location = new Point((this.Left + e.X - Posicion.X),(this.Top + e.Y - Posicion.Y));
+        }
+
+        //Metodos para cambiar el color de los botones de mis forms 
+        private void ActivarBoton(object Botoncito,Color Colorcito)
+        {
+            if (Botoncito != null)
+            {
+                DeshabilitarBoton();
+                btnActuar = (Button)Botoncito;
+                btnActuar.BackColor = Color.FromArgb(255, 193, 76);
+                btnActuar.ForeColor = Colorcito;
+                btnActuar.TextAlign = ContentAlignment.MiddleCenter;
+                btnActuar.FlatAppearance.MouseOverBackColor = Color.FromArgb(255,193,76);
+                btnActuar.TextImageRelation = TextImageRelation.TextBeforeImage;
+                btnActuar.ImageAlign = ContentAlignment.MiddleRight;
+            }
+        }
+        private void DeshabilitarBoton()
+        {
+            if (btnActuar != null)
+            {
+                btnActuar.BackColor = Color.FromArgb(200, 6, 27);
+                btnActuar.ForeColor = Color.Black;
+                btnActuar.TextAlign = ContentAlignment.MiddleLeft;
+                btnActuar.FlatAppearance.MouseOverBackColor = Color.Black;
+                btnActuar.TextImageRelation = TextImageRelation.ImageBeforeText;
+                btnActuar.ImageAlign = ContentAlignment.MiddleLeft;
+               
+            }
+        }
+
+        private struct RGBColors
+        {
+            public static Color Colorcito = Color.FromArgb(0, 0, 0);
+        }
+
     }
 }

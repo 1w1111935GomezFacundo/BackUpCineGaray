@@ -10,13 +10,13 @@ using System.Windows.Forms;
 
 namespace CinesGarayConsultas
 {
-    public partial class frmConsultaClientes : Form
+    public partial class frmClientesVisitas : Form
     {
         Datos d = new Datos();
         string procSQL;
         int[] aMes = new int[12];
         int[] aAño = new int[21];
-        public frmConsultaClientes()
+        public frmClientesVisitas()
         {
             InitializeComponent();
             int a = 1;
@@ -73,7 +73,7 @@ namespace CinesGarayConsultas
             else
                 añoMes = "mes";
             MostrarClientes(anyAll,añoMes, Convert.ToInt32(cboDatoAñoMes.SelectedItem));
-            cboDatoAñoMes.SelectedIndex = -1;
+            
         }
 
         private void frmConsultaClientes_Load(object sender, EventArgs e)

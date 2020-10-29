@@ -1,6 +1,6 @@
 ﻿namespace CinesGarayConsultas
 {
-    partial class frmConsultaClientes
+    partial class frmClientesVisitas
     {
         /// <summary>
         /// Required designer variable.
@@ -126,16 +126,16 @@
             this.btnConsultarClientes.UseVisualStyleBackColor = true;
             this.btnConsultarClientes.Click += new System.EventHandler(this.btnConsultarClientes_Click);
             // 
-            // frmConsultaClientes
+            // frmClientesVisitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 403);
+            this.ClientSize = new System.Drawing.Size(612, 386);
             this.Controls.Add(this.btnConsultarClientes);
             this.Controls.Add(this.panelTopClientes);
             this.Controls.Add(this.dgvClientes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmConsultaClientes";
+            this.Name = "frmClientesVisitas";
             this.Text = "frmConsultaClientes";
             this.Load += new System.EventHandler(this.frmConsultaClientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
